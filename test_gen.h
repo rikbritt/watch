@@ -47,6 +47,8 @@ extern "C" {
  * Fonts
  *----------------*/
 
+extern lv_font_t * font_medium;
+
 /*----------------
  * Images
  *----------------*/
@@ -76,6 +78,8 @@ void test_init_gen(const char * asset_path);
 /**********************
  *   POST INCLUDES
  **********************/
+#include "screens/test.h"
+
 
 #ifdef __cplusplus
 } /*extern "C"*/

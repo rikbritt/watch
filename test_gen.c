@@ -47,6 +47,9 @@
  * Fonts
  *----------------*/
 
+lv_font_t * font_medium;
+extern lv_font_t font_medium_data;
+
 /*----------------
  * Images
  *----------------*/
@@ -75,6 +78,9 @@ void test_init_gen(const char * asset_path)
      * Fonts
      *----------------*/
 
+    /* get font 'font_medium' from a C array */
+    font_medium = &font_medium_data;
+
 
     /*----------------
      * Images
@@ -90,6 +96,7 @@ void test_init_gen(const char * asset_path)
     /* Register widgets */
 
     /* Register fonts */
+    lv_xml_register_font(NULL, "font_medium", font_medium);
 
     /* Register subjects */
 
