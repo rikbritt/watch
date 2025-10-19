@@ -84,7 +84,7 @@ void watch_init_gen(const char * asset_path);
  **********************/
 
 /*Include all the widget and components of this library*/
-#include "screens/screen_hello_world_gen.h"
+#include "screens/watch_gen.h"
 
 #ifdef __cplusplus
 } /*extern "C"*/
