@@ -48,12 +48,15 @@ lv_obj_t * screen_hello_world_create(void)
     lv_obj_t * lv_obj_0 = lv_obj_create(NULL);
 
     lv_obj_add_style(lv_obj_0, &style_main, 0);
+    lv_obj_t * lv_image_0 = lv_image_create(lv_obj_0);
+    lv_image_set_src(lv_image_0, casio);
+    
     lv_obj_t * lv_button_0 = lv_button_create(lv_obj_0);
-    lv_obj_set_align(lv_button_0, LV_ALIGN_CENTER);
+    lv_obj_set_align(lv_button_0, LV_ALIGN_TOP_MID);
     lv_obj_set_style_bg_color(lv_button_0, lv_color_hex3(0x111), 0);
     lv_obj_t * lv_label_0 = lv_label_create(lv_button_0);
     lv_label_set_text(lv_label_0, "Hello world");
-    lv_obj_set_style_text_font(lv_label_0, font_medium, 0);
+    lv_obj_set_style_text_font(lv_label_0, font_lcd, 0);
 
     LV_TRACE_OBJ_CREATE("finished");
 
