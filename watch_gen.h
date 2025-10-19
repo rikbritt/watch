@@ -1,5 +1,5 @@
 /**
- * @file ui_hello_world_gen.h
+ * @file watch_gen.h
  */
 
 #ifndef UI_HELLO_WORLD_GEN_H
@@ -73,7 +73,7 @@ extern const void * casio;
  * Initialize the component library
  */
 
-void ui_hello_world_init_gen(const char * asset_path);
+void watch_init_gen(const char * asset_path);
 
 /**********************
  *      MACROS

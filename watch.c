@@ -1,19 +1,12 @@
 /**
- * @file ui_hello_world.h
+ * @file watch.c
  */
-
-#ifndef UI_HELLO_WORLD_H
-#define UI_HELLO_WORLD_H
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*********************
  *      INCLUDES
  *********************/
 
-#include "ui_hello_world_gen.h"
+#include "watch.h"
 
 /*********************
  *      DEFINES
@@ -24,24 +17,28 @@ extern "C" {
  **********************/
 
 /**********************
- * GLOBAL VARIABLES
+ *  STATIC PROTOTYPES
  **********************/
 
 /**********************
- * GLOBAL PROTOTYPES
+ *  STATIC VARIABLES
  **********************/
-
-/**
- * Initialize the component library
- */
-void ui_hello_world_init(const char * asset_path);
 
 /**********************
  *      MACROS
  **********************/
 
-#ifdef __cplusplus
-} /*extern "C"*/
-#endif
+/**********************
+ *   GLOBAL FUNCTIONS
+ **********************/
 
-#endif /*UI_HELLO_WORLD_H*/
+void watch_init(const char * asset_path)
+{
+    watch_init_gen(asset_path);
+
+    /* Add your own custom code here if needed */
+}
+
+/**********************
+ *   STATIC FUNCTIONS
+ **********************/

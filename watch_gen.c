@@ -1,12 +1,12 @@
 /**
- * @file ui_hello_world_gen.c
+ * @file watch_gen.c
  */
 
 /*********************
  *      INCLUDES
  *********************/
 
-#include "ui_hello_world_gen.h"
+#include "watch_gen.h"
 
 #if LV_USE_XML
 #endif /* LV_USE_XML */
@@ -70,7 +70,7 @@ const void * casio;
  *   GLOBAL FUNCTIONS
  **********************/
 
-void ui_hello_world_init_gen(const char * asset_path)
+void watch_init_gen(const char * asset_path)
 {
     char buf[256];
 
