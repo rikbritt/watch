@@ -8,7 +8,7 @@
  *********************/
 
 #include "screen_hello_world_gen.h"
-#include "ui_hello_world.h"
+#include "watch.h"
 
 /*********************
  *      DEFINES
